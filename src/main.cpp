@@ -24,7 +24,7 @@ int main(){
     std::string line;
     std::cout << sizeof(std::string) << "#\n";
     while(line != "exit"){
-        std::cout << "$ "<< " ";
+        std::cout << "> "<< " ";
         std::getline(std::cin, line);
         commandController.Execute(line);
         std::cout << '\n';
